@@ -29,7 +29,10 @@ body {
     display: flex;
     gap: rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-site a {
     text-decoration: none;
+    padding: 0.5rem 2rem;
 }
 /*.nav-item a:hover {
     background-color: var(--amarelo);
@@ -50,4 +53,5 @@ body {
     background-color: var(--azul);
     /*transform: scale(1.05);*/
 }
+
 
