@@ -17,6 +17,10 @@ body {
     flex-direction: column;
 }
 
+.contribua-titulo h1 {
+    color: var(--azul)
+}
+
 .section-contribuir h2, .section-contribuir p {
     color: var(--azul)
 }
@@ -24,3 +28,10 @@ body {
 .section-transparência h2, .section-transparência p {
     color: var(--laranja)
 }
+
+.formas h2, .formas p {
+    color: var(--amarelo);
+}
+
+
+
