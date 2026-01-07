@@ -1,0 +1,26 @@
+:root {
+    --laranja: #f18c22;
+    --azul: #2f709a;
+    --amarelo: #f6bc3f;
+    --bege: #fff3dd;
+}
+
+* {
+    margin: 0.5rem;
+    padding: 0.5px;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: var(--bege);
+    display: flex;
+    flex-direction: column;
+}
+
+.section-contribuir h2, .section-contribuir p {
+    color: var(--azul)
+}
+
+.section-transparência h2, .section-transparência p {
+    color: var(--laranja)
+}
