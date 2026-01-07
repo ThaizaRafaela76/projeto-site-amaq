@@ -27,12 +27,16 @@ body {
 .navbar-site ul {
     list-style: none;
     display: flex;
-    gap: rem;
+    gap: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .navbar-site a {
     text-decoration: none;
-    padding: 0.5rem 2rem;
+}
+.img-vr {
+    width: 150px;
+    height: auto;
+    margin-right: 2rem;
 }
 /*.nav-item a:hover {
     background-color: var(--amarelo);
@@ -48,6 +52,8 @@ body {
     padding: 0.6rem 1rem;
     border-radius: 0.4rem;
     font-weight: bold;
+
+
 }
 .nav-button:hover{
     background-color: var(--azul);
