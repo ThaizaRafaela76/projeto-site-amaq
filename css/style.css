@@ -16,8 +16,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 15px 30px;
-
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500; /* Medium */
 }
+
+/* botão do site alinhado, porém foi deslocado para o lado esquerdo */
 .navbar-site {
     display: flex;
     flex-direction: row;
@@ -45,19 +48,24 @@ body {
     text-decoration: none;
 } */
 
+/* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
 .nav-button{
+
     background-color:  var(--amarelo);
     text-decoration: none;
     color: var(--bege);
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1rem; 
     border-radius: 0.4rem;
     font-weight: bold;
     align-items: center;
-    border: none;
+
+
 }
 .nav-button:hover{
     background-color: var(--azul);
     /*transform: scale(1.05);*/
 }
 
-
+.img-default{
+    width: 400px;
+}
