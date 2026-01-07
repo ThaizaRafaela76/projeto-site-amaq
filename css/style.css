@@ -15,9 +15,9 @@ body {
     background-color:rgb(255, 243, 222);
     display: flex;
     flex-direction: column;
+    padding: 15px 30px;
 
 }
-
 .navbar-site {
     display: flex;
     flex-direction: row;
@@ -28,11 +28,26 @@ body {
     list-style: none;
     display: flex;
     gap: rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
-.navbar-site ul li {
+/*.nav-item a:hover {
+    background-color: var(--amarelo);
+    color: var(--bege);
+    text-decoration: none;
+} */
 
+.nav-button{
+    radius: 5px;
+    background-color:  var(--amarelo);
+    text-decoration: none;
+    color: var(--bege);
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
 }
-.botao {
-    
+.nav-button:hover{
+    background-color: var(--azul);
+    /*transform: scale(1.05);*/
 }
 
