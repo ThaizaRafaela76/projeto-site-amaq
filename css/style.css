@@ -23,6 +23,7 @@ body {
     flex-direction: row;
     margin-left: 0px;
     align-items: center;
+    justify-content: space-between;
 }
 .navbar-site ul {
     list-style: none;
@@ -45,15 +46,14 @@ body {
 } */
 
 .nav-button{
-    radius: 5px;
     background-color:  var(--amarelo);
     text-decoration: none;
     color: var(--bege);
     padding: 0.6rem 1rem;
     border-radius: 0.4rem;
     font-weight: bold;
-
-
+    align-items: center;
+    border: none;
 }
 .nav-button:hover{
     background-color: var(--azul);
