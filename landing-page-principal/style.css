@@ -1,7 +1,38 @@
-body {
-    background-color: (255, 243, 222);
+/* Cores da marca */
+:root {
+    --laranja: #f18c22;
+    --azul: #2f709a;
+    --amarelo: #f6bc3f;
+    --bege: #fff3dd;
 }
-header {
+* {
+    margin: 0.5rem;
+    padding: 0.5px;
+    box-sizing: content-box;
+}
+/* fundo do body - box em colunas  */
+body {
+    background-color:rgb(255, 243, 222);
+    display: flex;
+    flex-direction: column;
 
 }
-.
+
+.navbar-site {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    align-items: center;
+}
+.navbar-site ul {
+    list-style: none;
+    display: flex;
+    gap: rem;
+}
+.navbar-site ul li {
+
+}
+.botao {
+    
+}
+
