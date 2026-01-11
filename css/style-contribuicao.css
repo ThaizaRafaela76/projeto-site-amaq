@@ -15,51 +15,32 @@ body {
     font-family: Arial, sans-serif;
 }
 /* NAVBAR */
-/* botão do site alinhado, porém foi deslocado para o lado esquerdo */
-.navbar-site {
+.navbar {
+    background-color: var(--bege);
     display: flex;
-    flex-direction: row;
-    margin-left: 0px;
-    align-items: center;
     justify-content: space-between;
-}
-.navbar-site ul {
-    list-style: none;
-    font-family: 'Nunito', sans-serif;
-    display: flex;
-    gap: 1rem;
-    padding: 50px;
-}
-.navbar-site a {
-    text-decoration: none;
-    color: var(--bege);
-}
-.img-vr {
-    width: 200px;
-    height: auto;
-    margin-right: 2rem;
-    padding-left: 50px;
-}
-/*.nav-item a:hover {
-    background-color: var(--amarelo);
-    color: var(--bege);
-    text-decoration: none;
-} */
-
-/* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
-.nav-button{
-    background-color:  var(--laranja);
-    text-decoration: none;
-    color: var(--bege);
-    padding: 0.6rem 1rem; 
-    border-radius: 0.4rem;
-    font-weight: bold;
     align-items: center;
+    padding: 1.5rem 4rem;
 }
 
-.nav-button:hover{
-    background-color: var(--azul);
-    transform: scale(1.05);
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.navbar button {
+    background-color: var(--laranja);
+    color: var(--bege);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* TÍTULO */
