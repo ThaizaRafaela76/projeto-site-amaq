@@ -15,32 +15,56 @@ body {
     font-family: Arial, sans-serif;
 }
 /* NAVBAR */
-.navbar {
-    background-color: var(--bege);
+.navbar-site {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0px;
     align-items: center;
-    padding: 1.5rem 4rem;
+    justify-content: space-between;
 }
-
-.navbar ul {
+.navbar-site ul {
     list-style: none;
+    font-family: 'Nunito', sans-serif;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 50px;
 }
 
-.navbar a {
+.nav-item a {
     text-decoration: none;
     color: var(--azul);
 }
 
-.navbar button {
-    background-color: var(--laranja);
+#nav-button a {
+    text-decoration: none;
     color: var(--bege);
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 6px;
-    cursor: pointer;
+}
+.img-vr {
+    width: 200px;
+    height: auto;
+    margin-right: 2rem;
+    padding-left: 50px;
+}
+/*.nav-item a:hover {
+    background-color: var(--amarelo);
+    color: var(--bege);
+    text-decoration: none;
+} */
+
+/* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
+#nav-button{
+    background-color:  var(--laranja);
+    text-decoration: none;
+    color: var(--bege);
+    padding: 0.6rem 1rem; 
+    border-radius: 0.4rem;
+    font-weight: bold;
+    align-items: center;
+}
+
+#nav-button:hover{
+    background-color: var(--azul);
+    transform: scale(1.05);
 }
 
 /* TÍTULO */
