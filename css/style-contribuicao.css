@@ -4,34 +4,152 @@
     --amarelo: #f6bc3f;
     --bege: #fff3dd;
 }
-
+/* RESET */
 * {
-    margin: 0.5rem;
-    padding: 0.5px;
-    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
     background-color: var(--bege);
+    font-family: Arial, sans-serif;
+}
+/* NAVBAR */
+.navbar {
+    background-color: var(--bege);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.navbar button {
+    background-color: var(--laranja);
+    color: var(--bege);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* TÍTULO */
+.contribua-titulo {
+    padding: 4rem;
+    text-align: center;
 }
 
 .contribua-titulo h1 {
-    color: var(--azul)
+    color: var(--azul);
+    font-size: 2.5rem;
 }
 
-.section-contribuir h2, .section-contribuir p {
-    color: var(--azul)
+/* SECTIONS */
+section {
+    padding: 3rem 0;
 }
 
-.section-transparência h2, .section-transparência p {
-    color: var(--laranja)
+.conteudo {
+    width: 70%;
+    margin: 0 auto;
 }
 
-.formas h2, .formas p {
-    color: var(--amarelo);
+.section-contribuir h2 {
+    color: var(--azul);
 }
 
+.section-transparencia h2 {
+    color: var(--laranja);
+}
 
+section p {
+    margin-top: 1rem;
+    line-height: 1.6;
+}
 
+/* FORMAS */
+.formas h2 {
+    color: var(--azul);
+}
+
+.card {
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border-radius: 14px;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* CORES DAS CAIXAS */
+.associado {
+    background-color: var(--azul);
+    color: var(--bege);
+}
+
+.associado button {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
+.benfeitor {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
+.benfeitor button {
+    background-color: var(--azul);
+    color: var(--bege);
+}
+
+.dinheiro {
+    background-color: var(--laranja);
+    color: var(--bege);
+}
+
+.dinheiro button {
+    background-color: var(--bege);
+    color: var(--laranja);
+}
+
+/* FOOTER */
+.rodape {
+    background-color: var(--azul);
+    color: var(--bege);
+    margin-top: 4rem;
+    padding: 3rem 0 1rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape h4 {
+    margin-bottom: 0.5rem;
+}
+
+.direitos {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
