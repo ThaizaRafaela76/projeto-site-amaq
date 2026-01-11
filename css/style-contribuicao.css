@@ -4,175 +4,148 @@
     --amarelo: #f6bc3f;
     --bege: #fff3dd;
 }
-
 /* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* BODY */
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bege);
-    color: var(--azul);
+    font-family: Arial, sans-serif;
 }
-
 /* NAVBAR */
 .navbar {
     background-color: var(--bege);
-    padding: 1.5rem 3rem;
-}
-
-nav {
-    max-width: 1100px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem 4rem;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
     display: flex;
     gap: 2rem;
-    align-items: center;
 }
 
-nav ul li a {
+.navbar a {
     text-decoration: none;
     color: var(--azul);
-    font-weight: 500;
 }
 
-nav button {
+.navbar button {
     background-color: var(--laranja);
+    color: var(--bege);
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
-}
-
-nav button a {
-    color: var(--bege);
-    text-decoration: none;
-    font-weight: bold;
+    cursor: pointer;
 }
 
 /* TÍTULO */
 .contribua-titulo {
+    padding: 4rem;
     text-align: center;
-    padding: 5rem 2rem;
 }
 
 .contribua-titulo h1 {
     color: var(--azul);
-    font-size: 2.6rem;
+    font-size: 2.5rem;
 }
 
-/* SECTIONS GERAIS */
+/* SECTIONS */
 section {
-    max-width: 900px;
+    padding: 3rem 0;
+}
+
+.conteudo {
+    width: 70%;
     margin: 0 auto;
-    padding: 4rem 2rem;
 }
 
-section h2 {
-    margin-bottom: 1rem;
-    font-size: 1.6rem;
-}
-
-section p {
-    line-height: 1.6;
-    max-width: 750px;
-}
-
-/* POR QUE CONTRIBUIR */
-.section-contribuir h2,
-.section-contribuir p {
+.section-contribuir h2 {
     color: var(--azul);
 }
 
-/* TRANSPARÊNCIA */
-.section-transparência h2,
-.section-transparência p {
+.section-transparencia h2 {
     color: var(--laranja);
 }
 
-/* FORMAS DE CONTRIBUIR */
-.formas h2,
-.formas p {
-    color: var(--amarelo);
+section p {
+    margin-top: 1rem;
+    line-height: 1.6;
 }
 
-/* ARTIGOS (CAIXAS) */
-.formas article {
+/* FORMAS */
+.formas h2 {
+    color: var(--azul);
+}
+
+.card {
     margin-top: 3rem;
     padding: 2.5rem;
     border-radius: 14px;
 }
 
-/* ASSOCIADO */
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card button {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* CORES DAS CAIXAS */
 .associado {
     background-color: var(--azul);
     color: var(--bege);
 }
 
-/* BENFEITOR */
-.formas article:nth-of-type(2) {
+.associado button {
     background-color: var(--amarelo);
     color: var(--azul);
 }
 
-/* CONTRIBUIÇÃO EM DINHEIRO */
-.formas article:nth-of-type(3) {
+.benfeitor {
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
+.benfeitor button {
+    background-color: var(--azul);
+    color: var(--bege);
+}
+
+.dinheiro {
     background-color: var(--laranja);
     color: var(--bege);
 }
 
-/* TÍTULOS DAS CAIXAS */
-article h3 {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-/* BOTÕES */
-article button {
-    margin-top: 1.5rem;
+.dinheiro button {
     background-color: var(--bege);
-    color: var(--azul);
-    border: none;
-    padding: 0.7rem 1.4rem;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
+    color: var(--laranja);
 }
 
-/* RODAPÉ */
+/* FOOTER */
 .rodape {
     background-color: var(--azul);
     color: var(--bege);
-    padding: 4rem 2rem 2rem;
+    margin-top: 4rem;
+    padding: 3rem 0 1rem;
 }
 
-.rodape .conteudo {
-    max-width: 1100px;
-    margin: 0 auto;
+.footer-grid {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
 }
 
 .rodape h4 {
-    margin-bottom: 1rem;
-}
-
-.rodape p {
-    line-height: 1.6;
-}
-
-.icones img {
-    margin-right: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .direitos {
