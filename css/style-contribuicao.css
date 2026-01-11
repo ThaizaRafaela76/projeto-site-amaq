@@ -132,24 +132,55 @@ section p {
 }
 
 /* FOOTER */
-.rodape {
+footer {
     background-color: var(--azul);
     color: var(--bege);
-    margin-top: 4rem;
-    padding: 3rem 0 1rem;
+    padding: 40px 0px 0px 90px
 }
 
-.footer-grid {
+.rodape {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.conteudo-rodape {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
+    gap: 200px;            
+    align-items: flex-start;
 }
 
-.rodape h4 {
-    margin-bottom: 0.5rem;
+.colunas-rodape {
+    width: 320px; 
+
+}
+.colunas-rodape p{
+    margin-bottom: 10px;
 }
 
-.direitos {
+.colunas-rodape a {
+    text-decoration: none;
+    color: var(--bege);
+}
+
+.local-rodape {
+    width: 300px;
     text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    max-width: 320px;
+}
+
+.colunas-rodape h4, .local-rodape h4 {
+    margin-bottom: 10px;
+}
+
+.img-icones img {
+    margin-right: 15px;
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.direitos-rodape {
+    padding-top: 40px 0px;
+    text-align: center;
 }
