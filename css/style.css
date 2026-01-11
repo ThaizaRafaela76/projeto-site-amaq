@@ -18,6 +18,12 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 500; /* Medium */
 }
+
+/*todos os h2 recebem este tamanho*/
+h2 {
+    font-size: 2rem;
+}
+
 /*Garante que a página ocupe toda a largura da tela*/
 html, body {
   width: 100%;
@@ -33,17 +39,20 @@ html, body {
 }
 .navbar-site ul {
     list-style: none;
+    font-family: 'Nunito', sans-serif;
     display: flex;
     gap: 1rem;
-    font-family: 'Nunito', sans-serif;
+    padding: 50px;
 }
 .navbar-site a {
     text-decoration: none;
+    color: var(--bege);
 }
 .img-vr {
-    width: 150px;
+    width: 200px;
     height: auto;
     margin-right: 2rem;
+    padding-left: 50px;
 }
 /*.nav-item a:hover {
     background-color: var(--amarelo);
@@ -53,7 +62,6 @@ html, body {
 
 /* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
 .nav-button{
-
     background-color:  var(--laranja);
     text-decoration: none;
     color: var(--bege);
@@ -61,23 +69,17 @@ html, body {
     border-radius: 0.4rem;
     font-weight: bold;
     align-items: center;
-
-
 }
+
 .nav-button:hover{
     background-color: var(--azul);
-    /*transform: scale(1.05);*/
-}
-
-.img-default{
-    width: 400px;
+    transform: scale(1.05);
 }
 
 /*container da tag main; ajusta as propriedas do resto do corpo sem mexer na home e no footer*/
 .container {
-  max-width: 1200px;
-  margin: 0;
-  padding: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*adicionar a foto no fundo da home*/
@@ -87,34 +89,41 @@ html, body {
     min-height: 550px; /* Altura mínima igual à altura da tela */
 
     background-image:
-    linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), /*adiciona o overlay; deixa mais escuro*/
+    linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), /*adiciona o overlay;*/
     url("/projeto-site-amaq/img/foto-home2.png");
 
-    background-size: cover;  /* Faz a imagem cobrir toda a área */
+    background-size: 100% 100%;  /* Faz a imagem cobrir toda a área */
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /*organiza o texto da home*/
+
 .home-titulo {
     color: var(--bege);
 
-    max-width: 1100px;
-    padding-left: 25px;
-    margin-top: 180px;
+    margin-left: 50px;
+    margin-top: 80px;
+    font-size: 1.5rem;
 
-    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
+
+#p-home {
+    max-width: 855px;
+    font-size: 18px;
 }
 
 /*alinha o botão da home com o texto*/
 .bnt-video {
-    padding-left: 25px;
+    margin-left: 50px;
     margin-top: 40px;
 }
 
 /*organiza as propriedades do botão da home: assistir video*/
 .bnt-video button {
-    padding: 10px 15px;
+    padding: 10px 25px;
     border: 0;
     border-radius: 0.4rem;
 
@@ -126,8 +135,273 @@ html, body {
     text-decoration: none;
     color: var(--bege);
     font-weight: bold;
-    font-size: medium;
+    font-size: 18px;
 }
 
+.bnt-video button:hover {
+    background-color: var(--azul);
+}
+/*class da section*/
+
+.quem-somos {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*imagem do quebra cabeça*/
+#img-peça {
+    margin-left: 60px;
+    margin-top: 35px;
+}
+
+/*altera na div dos textos*/
+.texto-quemS {
+    max-width: 700px;
+    margin-right: 100px;
+    margin-top: 35px;
+}
+
+/*altera apenas no paragrafos do da div dos texto, deixando eles com 20px de espaçamento */
+.texto-quemS p {
+    padding-top: 20px;
+}
+
+.texto-quemS h2 {
+    color: var(--azul);
+    padding-bottom: 15px;
+}
+
+/*altera apenas o espaço entre o último p e o botão*/
+.bnt-saiba {
+    padding-top: 30px;
+}
+
+/*altera as propriedades do botão*/
+.bnt-saiba button {
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 0.4rem;
+
+    background-color: var(--laranja);
+}
+
+/*altera apenas o texto do botão*/
+.bnt-saiba button a {
+    text-decoration: none;
+    color: var(--bege);
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*eventos*/
+
+.div-event {
+    padding: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.texto-event h2 {
+    display: flex;
+    justify-content: center;
+
+    color: var(--amarelo);
+}
+
+.texto-event p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    max-width: 2000px;
+    margin: 35px 70px 40px 70px;
+
+}
+
+/*div que contem todas as imagens dos eventos, deixando elas centralizadas*/
+.img-event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    max-width: 1200px; 
+    width: 100%;
+    
+}
+
+/*a div do evento de carnaval para que o fundo fique com cor*/
+.carnaval {
+   width: 250px;
+   height: 350px;
+
+   color: var(--bege);
+   text-align: center;
+
+   background-color: var(--azul);
+   padding: 0px 0px 50px 0px;
+   border-radius: 0.4rem;
+}
+
+.carnaval p, .mae p, .corrida p, .bombeiro p {
+    font-weight: bold;
+}
+
+/*a imagem do evento de carnaval dentro do background*/
+.carnaval img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover; 
+     border-radius: 0.4rem 0.4rem 0 0;  
+}
+
+.mae {
+    width: 250px;
+    height: 350px;
+
+    color: var(--bege);
+    text-align: center;
+
+    background-color: var(--laranja);
+    padding: 0px 0px 50px 0px;
+    border-radius: 0.4rem;
+}
+.mae img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.corrida {
+    width: 250px;
+    height: 350px;
+
+    color: var(--bege);
+    text-align: center;
+
+    background-color: var(--amarelo);
+    padding: 0px 0px 50px 0px;
+    border-radius: 0.4rem;
+}
+.corrida img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.bombeiro {
+    width: 250px;
+    height: 350px;
+
+    color: var(--bege);
+    text-align: center;
+
+    background-color: var(--azul);
+    padding: 0px 0px 50px 0px;
+    border-radius: 0.4rem;
+}
+.bombeiro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+/*botão de eventos*/
+.bnt-event {
+    display: flex;
+    justify-content: center;
+
+    gap: 4.5rem;          
+    padding-top: 50px;
+
+    max-width: 1200px;  
+    width: 100%;
+}
+/*propriedades do botão*/
+.bnt-event button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 0.4rem;
+
+    min-width: 260px;
+    text-align: center;
+
+    background-color: var(--laranja);
+    color: var(--bege);
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+/*rodapé*/
+footer {
+    background-color: var(--azul);
+    color: var(--bege);
+    padding: 40px 0px 0px 90px
+}
+
+.rodape {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.conteudo-rodape {
+    display: flex;
+    justify-content: center; 
+    gap: 200px;            
+    align-items: flex-start;
+}
+
+.colunas-rodape {
+    width: 320px; 
+
+}
+.colunas-rodape p{
+    margin-bottom: 10px;
+}
+
+.colunas-rodape a {
+    text-decoration: none;
+    color: var(--bege);
+}
+
+.local-rodape {
+    width: 300px;
+    text-align: center;
+    max-width: 320px;
+}
+
+.colunas-rodape h4, .local-rodape h4 {
+    margin-bottom: 10px;
+}
+
+.img-icones img {
+    margin-right: 15px;
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.direitos-rodape {
+    padding-top: 40px 0px;
+    text-align: center;
+}
 
 

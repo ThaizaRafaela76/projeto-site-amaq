@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
 
 
+
     <title>AMAQ</title>
 </head>
 <body>
@@ -33,8 +34,8 @@
 
         <!--Título principal-->
         <div class="home-titulo">
-            <h1>AMAQ: Associação de Mães e Autistas de Quixadá</h1>
-            <p>Uma organização sem fins lucrativos que acolhe, apoia e defende os direitos das pessoas com Transtorno do Espectro Autista (TEA) e de suas famílias em Quixadá e região, promovendo a inclusão, a informação e a solidariedade por meio de ações educativas e sociais que contribuem para a transformação de realidades. </p>
+            <h1 id="h1-home">AMAQ: Associação de Mães e Autistas de Quixadá</h1>
+            <p id="p-home">Uma organização sem fins lucrativos que acolhe, apoia e defende os direitos das pessoas com Transtorno do Espectro Autista (TEA) e de suas famílias em Quixadá e região, promovendo a inclusão, a informação e a solidariedade por meio de ações educativas e sociais que contribuem para a transformação de realidades. </p>
         </div>
 
         <!--Botão para o vídeo-->
@@ -46,30 +47,49 @@
     
     <main class="container">
     <!-- Quem Somos -->
-    <section>
-        <div> 
+    <section class="quem-somos">
+        <div id="img-peça">
+            <img src="img/quebra-cabeça-virado.png"> 
+        </div>
+        <div class="texto-quemS">
             <h2> Quem Somos </h2>
-            <img src="img/quebra-cabeça-virado.png" width="150px">
             <p>Fundada com o objetivo de promover o apoio, a inclusão e a defesa dos direitos das pessoas com Transtorno do Espectro Autista (TEA) e outras deficiências, a AMAQ atua de forma ativa no combate ao preconceito, na promoção da cidadania e na construção de uma sociedade mais justa e inclusiva.</p>
             <p>Entre seus objetivos estão o apoio psicológico às famílias, a articulação com instituições, a promoção de ações sociais e a implantação de um centro de atendimento multidisciplinar. Conheça mais sobre a AMAQ e descubra como nossas ações impactam vidas, fortalecem famílias e contribuem para a construção de uma sociedade mais inclusiva. </p>
-            <button class="" id=""><a href=""> Saiba mais sobre a AMAQ</a></button>
+            <div class="bnt-saiba">
+               <button><a href=""> Saiba mais sobre a AMAQ</a></button>
+            </div>
         </div>
     </section>
 
     <!-- Nossos Eventos -->
-     <section> 
-        <h2> Nossos Eventos </h2>
-        <p>Desenvolvemos ações contínuas de conscientização por meio de palestras, campanhas educativas e eventos comunitários, promovendo inclusão e respeito. Para fortalecer essas iniciativas, contamos com padrinhos que apoiam nossos eventos e contribuem diretamente para sua realização e alcance, ampliando seu impacto social. Seja padrinho e faça parte dessa transformação.</p>
-        <div>
-            <img src="img/evento-carnaval.png" class="img-default">
-            <img src="img/evento-mães.jpg" class="img-default">
-            <img src="img/evento-corrida.jpg" class="img-default">
-            <img src="img/evento-bombeiros.jpg" class="img-default">
+     <section class="div-event"> 
+        <div class="texto-event">
+            <h2> Nossos Eventos </h2>
+            <p>Desenvolvemos ações contínuas de conscientização por meio de palestras, campanhas educativas e eventos comunitários, promovendo inclusão e respeito. Para fortalecer essas iniciativas, contamos com padrinhos que apoiam nossos eventos e contribuem diretamente para sua realização e alcance, ampliando seu impacto social. Seja padrinho e faça parte dessa transformação.</p>
         </div>
+        <div class="img-event">
+            <div class="carnaval">
+                <img src="img/evento-carnaval.png">
+                <p>Bloquinho da AMAQ</p>
+            </div>
+            <div class="mae">
+                <img src="img/evento-mães.jpg">
+                <p>Dia das Mães</p>
+            </div>
+            <div class="corrida">
+                <img src="img/evento-corrida.jpg">
+                <p>1°Corrida e Conscientização do Autismo</p>
+            </div>
+            <div class="bombeiro">
+                <img src="img/evento-bombeiros.jpg">
+                <p>Projetos Bombeiros</p>
+            </div>
+        </div>
+        
     <!-- Botões separados -->
-        <div>
-            <button class="" id=""> Confira nosso cronograma </button>
-            <button class="" id=""> Quero ser padrinho </button>
+        <div class="bnt-event">
+            <button>Confira nosso cronograma</button>
+            <button>Quero ser padrinho</button>
         </div>
      </section>
 
@@ -135,31 +155,43 @@
         </div>
     </section>
     </main>
+
     <!--Rodapé-->
+
     <footer>
-        <div>
+        <div class="rodape">
+
             <!--contato-->
-            <div>
+            <section class="conteudo-rodape">
+                <div class="colunas-rodape">
                 <h4>Contato</h4>
-                <p>Telefone: (88) 9.9341-0517</p>
-                <p>Email: casadoautistaquixada@gmail.com</p>
+                <p>Telefone: (88) 9 9341-0517</p>
+                <a href="mailto:casadoautistaquixada@gmail.com"><p>Email: casadoautistaquixada@gmail.com</p></a>
                 <p>Instagram: @casadoautistaquixada</p>
             </div>
 
             <!--localização-->
-            <div>
+            <div class="local-rodape">
                 <h4>Localização</h4>
                 <p>Rua Raimundo Gomes de Oliveira, N° 338, Bairro Baviera- Quixadá.</p>
             </div>
 
             <!--redes sociais-->
-            <div>
+            <div class="colunas-rodape">
                 <h4>Redes Sociais</h4>
-                <img src="img/instagram.png"width="100px" ><a href=""></a>
-                <img src="img/whatsapp.png" width="100px" ><a href=""></a>
+                <div class="img-icones">
+                    <a href="https://www.instagram.com/casadoautistaquixada?igsh=M2JzNHd4MHVsNTY1" target="_blank"><img src="img/instagram.png"></a>
+                    <a href="https://wa.me/5588993410517"><img src="img/whatsapp.png"></a>
+                </div>
+            </div>
+            </section>
+
+            <!--Direitos-->
+            <section class="direitos-rodape">
+                <p> &#169; 2026 - Associação de Mães e Autistas de Quixadá - Ceará </p>
+            </section>
             </div>
         </div>
-        <p> © 2026 - Associação de Mães e Autistas de Quixadá - Ceará </p>
     </footer>
     
     <script src="js/script.js"></script>
