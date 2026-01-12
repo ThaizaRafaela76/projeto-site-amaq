@@ -125,6 +125,7 @@ section p {
     margin-top: 2rem;
     padding: 2.5rem;
     border-radius: 14px;
+    text-align: center;
 }
 
 .card h3 {
@@ -133,10 +134,12 @@ section p {
 
 .card button {
     margin-top: 1.5rem;
-    padding: 0.6rem 1.4rem;
+    padding: 0.6rem 1rem;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 14px
 }
 
 /* CORES DAS CAIXAS */
@@ -147,12 +150,12 @@ section p {
 
 .associado button {
     background-color: var(--amarelo);
-    color: var(--azul);
+    color: var(--bege);
 }
 
 .benfeitor {
     background-color: var(--amarelo);
-    color: var(--azul);
+    color: var(--bege);
 }
 
 .benfeitor button {
