@@ -40,6 +40,7 @@ html, body {
 .nav-item a {
     text-decoration: none;
     color: var(--azul);
+    font-weight: bold;
 }
 
 #nav-button a {
@@ -74,6 +75,7 @@ html, body {
     transform: scale(1.05);
 }
 
+
 /* TÍTULO */
 .contribua-titulo {
     padding: 4rem;
@@ -83,6 +85,10 @@ html, body {
 .contribua-titulo h1 {
     color: var(--azul);
     font-size: 2.5rem;
+}
+
+.contribua-titulo h2 {
+    color: var(--azul)
 }
 
 .conteudo-principal {
@@ -173,11 +179,33 @@ section p {
     color: var(--laranja);
 }
 
+#pix {
+    margin-left: 15px;
+}
+
+#pix h4 {
+    text-align: left;
+    padding-top: 3rem;
+}
+
+#pix p {
+    text-align: left;
+    margin: 0.2rem 0;
+}
+
+#qrcode {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: -130px;
+}
+
 /* FOOTER */
 .rodape {
     background-color: var(--azul);
     color: var(--bege);
-    padding: 4rem 2rem 2rem;
+    padding: 0.8rem 2rem 2rem;
 }
 
 .rodape .conteudo {
