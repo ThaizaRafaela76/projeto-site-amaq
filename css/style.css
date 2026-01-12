@@ -429,8 +429,7 @@ adicionado em h2 cores da marca */
             margin-right: 25px;
             border-radius: 0.4rem;
             padding-left: 10px;
-            padding-right: 0px;
-            width: 70%;
+            padding-right: 0px;;
 
             div {
                  margin-top: 0;
@@ -457,10 +456,13 @@ adicionado em h2 cores da marca */
 
     p {
         text-align: left;
-        color: var(--bege)
+        color: var(--bege);
+        padding-bottom: 20px;
     }
      h3 {
         text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     div {
         width: 50%;
@@ -472,10 +474,13 @@ adicionado em h2 cores da marca */
 
     p {
         text-align: left;
-        color: var(--bege)
+        color: var(--bege);
+        padding-bottom: 20px;
     }
      h3 {
         text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     div {
         width: 50%;
@@ -487,10 +492,13 @@ adicionado em h2 cores da marca */
 
     p {
         text-align: left;
-        color: var(--bege)
+        color: var(--bege);
+        padding-bottom: 20px;
     }
     h3 {
         text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     div {
         width: 50%;
@@ -502,10 +510,13 @@ adicionado em h2 cores da marca */
 
     p {
         text-align: left;
-        color: var(--bege)
+        color: var(--bege);
+        padding-bottom: 20px;
     }
     h3 {
         text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     div {
         width: 50%;
@@ -544,13 +555,18 @@ adicionado em h2 cores da marca */
         padding-bottom: 15px;
     }
     p {
-        
+        padding-top: 20px;
     }
-
 }
+
 .imagens-parceiros {
     display: flex;
     align-items: center;
+    padding-top: 40px;
+}
+#button-parceiro {
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 /*rodapé*/
@@ -605,6 +621,7 @@ footer {
 .direitos-rodape {
     padding-top: 40px 0px;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 
