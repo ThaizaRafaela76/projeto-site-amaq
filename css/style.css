@@ -60,6 +60,7 @@ html, body {
     text-decoration: none;
 } */
 
+
 /* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
 .nav-button{
     background-color:  var(--laranja);
@@ -90,7 +91,7 @@ html, body {
 
     background-image:
     linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), /*adiciona o overlay;*/
-    url("/projeto-site-amaq/img/foto-home2.png");
+    url("/img/foto-home2.png");
 
     background-size: 100% 100%;  /* Faz a imagem cobrir toda a área */
     background-position: center;
@@ -141,6 +142,7 @@ html, body {
 .bnt-video button:hover {
     background-color: var(--azul);
 }
+
 /*class da section*/
 
 .quem-somos {
@@ -208,8 +210,6 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
 
 .texto-event h2 {
@@ -235,7 +235,7 @@ html, body {
     align-items: center;
     justify-content: center;
     gap: 4rem;
-
+    
     max-width: 1200px; 
     width: 100%;
     
@@ -277,6 +277,7 @@ html, body {
     padding: 0px 0px 50px 0px;
     border-radius: 0.4rem;
 }
+
 .mae img {
     width: 100%;
     height: 100%;
@@ -347,8 +348,210 @@ html, body {
     font-weight: bold;
     font-size: 1rem;
 }
+/* thaiza - Class Contribua com a amaq -- items na horizontal -- espaçamentos de 60px para esquerda
+e 20px para cima */
+.div-contribua { 
+    display: flex;
+    padding-left: 60px;
+    padding-top: 20px
 
+}
+/*thaiza - Os textos assumem 50% dentro do pai "div-contribua"
+adicionado em h2 cores da marca */
+.texto-contribua {
+    width: 50%;
+}
+.texto-contribua h2{
+    color: var(--laranja);
+    padding-bottom: 15px;
+}
+.texto-contribua p {
+    padding-top: 20px;
+    text-justify:auto;
+}
+/*thaiza - imagem em outra div para mexer melhor no estilo dela*/
+.div-img-contribua {
+    align-items: center;
+    padding-left: 10%;
+}
+.div-img-contribua img {
+    width: 350px;
+    margin-left: 50px;
+}
 
+/*botão contribua com a AMAQ*/
+.div-contribua button {
+    justify-content: center;
+    padding-top: 50px;
+    
+/*propriedades do botão*/
+    padding: 10px 20px;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 0.4rem;
+
+    text-align: center;
+
+    background-color: var(--laranja);
+    color: var(--bege);
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* Bloco Profissionais*/
+.div-profissionais {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+    h2 {
+        color: var(--azul);
+        padding-bottom: 15px;
+    }
+    p {
+        padding-top: 20px;
+    }
+}
+/* Filho do bloco profissionais ajuste dos backgrounds das divs -- 
+    Div */
+.div-profissionais-bloco {
+    display: flex;
+    p {
+        padding: 0;
+    }
+    
+    div {
+        div{
+            margin-top: 50px;
+            margin-left: 15px;
+            margin-right: 25px;
+            border-radius: 0.4rem;
+            padding-left: 10px;
+            padding-right: 0px;
+            width: 70%;
+
+            div {
+                 margin-top: 0;
+                 width: 50%;
+            }
+            img{
+                width: 100px;
+                height: 120px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+.div-profissionais-bloco h3 {
+    color: var(--bege);
+}
+.div-medico {
+   
+    display: flex;
+    background-color: var(--laranja);
+
+    p {
+        text-align: left;
+        color: var(--bege)
+    }
+     h3 {
+        text-align: left;
+    }
+    div {
+        width: 50%;
+    }
+}
+.div-psicologo {
+    display: flex;
+    background-color: var(--azul);
+
+    p {
+        text-align: left;
+        color: var(--bege)
+    }
+     h3 {
+        text-align: left;
+    }
+    div {
+        width: 50%;
+    }
+}
+.div-psi {
+    display: flex;
+    background-color: var(--azul);
+
+    p {
+        text-align: left;
+        color: var(--bege)
+    }
+    h3 {
+        text-align: left;
+    }
+    div {
+        width: 50%;
+    }
+}
+.div-fono {
+    display: flex;
+    background-color: var(--amarelo);
+
+    p {
+        text-align: left;
+        color: var(--bege)
+    }
+    h3 {
+        text-align: left;
+    }
+    div {
+        width: 50%;
+    }
+}
+
+/* button-default - contribua - profissionais - parceiros */
+.button-default {
+
+    justify-content: center;
+    padding-top: 50px;
+    
+    /*propriedades do botão*/
+    padding: 10px 20px;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 0.4rem;
+
+    text-align: center;
+
+    background-color: var(--laranja);
+    color: var(--bege);
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* parceiros */
+.section-parceiro {
+    align-items: center;
+    text-align: center;
+    justify-items: center;;
+
+    h2 {
+        color: var(--amarelo);
+        padding-bottom: 15px;
+    }
+    p {
+        
+    }
+
+}
+.imagens-parceiros {
+    display: flex;
+    align-items: center;
+}
 
 /*rodapé*/
 footer {
