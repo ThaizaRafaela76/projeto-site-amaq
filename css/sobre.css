@@ -1,0 +1,138 @@
+:root {
+    --laranja: #f18c22;
+    --azul: #2f709a;
+    --amarelo: #f6bc3f;
+    --bege: #fff3dd;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+  width: 100%;
+}
+
+
+
+body {
+    background-color: var(--bege);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* NAVBAR */
+.navbar-site {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.navbar-site ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* links padrão */
+.nav-item a {
+    text-decoration: none;
+    color: var(--azul);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* logo */
+.img-vr {
+    width: 200px;
+    height: auto;
+}
+
+/* botão "Contribua com a AMAQ" */
+.nav-item a.nav-button {
+    background-color: var(--laranja);
+    color: var(--bege);
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+}
+
+/* hover do botão */
+.nav-item a.nav-button:hover {
+    background-color: var(--azul);
+    color: var(--bege);
+    transform: scale(1.05);
+}
+
+
+/* MEMBROS API */
+
+
+/* RESET específico para membros */
+#membros-section * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#membros-section #h2-membros {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 48px 0 40px;
+    color: #000000;
+}
+
+#membros-section #card {
+    max-width: 1200px;
+    margin: 0 auto 64px;
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 32px; 
+}
+
+#membros-section .div-membro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 16px 28px;
+    background-color: var(--bege);
+}
+
+#membros-section .img-membro {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid #2E719B;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+#membros-section .nome-membro {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f1f1f;
+    margin-bottom: 4px;
+}
+
+#membros-section .cargo-membro {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6b6b6b;
+}
+
