@@ -181,9 +181,10 @@ section p {
 
 #pix {
     margin-left: 15px;
+    font-weight: bold;
 }
 
-#pix h4 {
+#pix h3 {
     text-align: left;
     padding-top: 3rem;
 }
