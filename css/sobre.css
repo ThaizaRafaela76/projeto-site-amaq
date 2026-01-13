@@ -12,12 +12,9 @@
     box-sizing: border-box;
 }
 
-
 html, body {
-  width: 100%;
+    width: 100%;
 }
-
-
 
 body {
     background-color: var(--bege);
@@ -26,18 +23,19 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
+
 .navbar-site {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
+    padding: 1.5rem 3rem;
 }
 
 .navbar-site ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -46,40 +44,123 @@ body {
     align-items: center;
 }
 
-/* links padrão */
 .nav-item a {
     text-decoration: none;
     color: var(--azul);
     font-weight: bold;
-    display: flex;
-    align-items: center;
 }
 
-/* logo */
 .img-vr {
     width: 200px;
     height: auto;
 }
 
-/* botão "Contribua com a AMAQ" */
 .nav-item a.nav-button {
     background-color: var(--laranja);
     color: var(--bege);
-    padding: 0.6rem 1rem;
-    border-radius: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
     font-weight: bold;
 }
 
-/* hover do botão */
 .nav-item a.nav-button:hover {
     background-color: var(--azul);
     color: var(--bege);
     transform: scale(1.05);
 }
 
+/* ================= TÍTULO DA PÁGINA ================= */
 
-/* MEMBROS API */
+.sobre-titulo {
+    padding: 4rem 1rem 10px;
+    text-align: center;
+}
 
+.sobre-titulo h1 {
+    color: var(--azul);
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-titulo h2 {
+    color: var(--azul);
+    font-size: 1.4rem;
+    max-width: 700px;      /* controla a quebra */
+    margin: 0 auto;        /* centraliza */
+    text-align: center;
+    line-height: 1.4;
+    
+   
+}
+
+/* ================= CONTEÚDO PRINCIPAL ================= */
+
+.conteudo-principal {
+    padding: 2rem 0;
+}
+
+/* ================= TEXTO QUEM SOMOS ================= */
+
+.section-sobre {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.texto-quem-Somos {
+    max-width: 900px;
+    text-align: justify;
+    line-height: 1.7;
+    color: #000;
+    font-size: 1rem;
+}
+
+/* ================= CARDS MISSÃO | VISÃO | VALORES ================= */
+
+.cards-mvv {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 1rem;
+}
+
+.cards-mvv > div {
+    width: 280px;
+    min-height: 320px;
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-mvv h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* CORES DOS CARDS */
+
+.card-missao {
+    background-color: var(--azul);
+    color: var(--bege);
+}
+
+.card-visao {
+    background-color: var(--laranja);
+    color: var(--bege);
+}
+
+.card-valores {
+    background-color: var(--amarelo);
+    color: var(--bege);
+}
+
+.cards-mvv p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ================= MEMBROS (NÃO ALTERADO) ================= */
 
 /* RESET específico para membros */
 #membros-section * {
@@ -102,7 +183,7 @@ body {
     padding: 0 32px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 40px 32px; 
+    gap: 40px 32px;
 }
 
 #membros-section .div-membro {
@@ -135,4 +216,3 @@ body {
     font-weight: 400;
     color: #6b6b6b;
 }
-
