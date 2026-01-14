@@ -1,3 +1,23 @@
+const btn_video = document.getElementById("btn-video-id");
+const btn_fechar = document.getElementById("fechar-video");
+
+btn_video?.addEventListener("click", function(event){
+    event.preventDefault();
+    const div = document.getElementById("div-video");
+    div.style.display = "flex";
+    const video = div.querySelector("video");
+    video.play();
+});
+
+btn_fechar?.addEventListener("click", function(event){
+    event.preventDefault();
+    const div = document.getElementById("div-video");
+    const video = div.querySelector("video");
+    video.pause();
+    video.currentTime = 0;
+    div.style.display = "none";
+});
+
 async function baixarDados() {
     const requisicaoHTTP = await fetch(
         "https://my-json-server.typicode.com/JuliaSouzza/api-membros/membros"
