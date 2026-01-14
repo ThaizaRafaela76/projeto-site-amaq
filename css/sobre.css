@@ -216,3 +216,140 @@ body {
     font-weight: 400;
     color: #6b6b6b;
 }
+
+/* =========================
+   FOOTER / RODAPÉ
+========================= */
+
+.rodape {
+    width: 100%;
+    background-color: #2f6fa3;
+    padding: 3rem 1.5rem;
+    color: #ffffff;
+}
+
+/* Container interno do footer */
+.footer-grid {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.rodape {
+    width: 100%;
+    background-color: var(--azul);
+    color: var(--bege);
+    padding: 2.5rem 3rem 1.5rem;
+}
+
+/* Grid principal */
+.footer-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+
+/* =========================
+   CONTATO
+========================= */
+
+.contatos {
+    text-align: left;
+}
+
+.contatos h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.contatos p {
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+}
+
+/* =========================
+   LOCALIZAÇÃO
+========================= */
+
+.localizacao {
+    text-align: center;
+}
+
+.localizacao h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.localizacao p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.img-icones {
+    text-align: right;
+}
+
+.img-icones h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.img-icones a {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.img-icones img {
+    width: 42px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.img-icones img:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   DIREITOS
+========================= */
+
+.direitos {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .img-icones {
+        text-align: center;
+    }
+
+    .img-icones a {
+        margin: 0 10px;
+    }
+}
