@@ -155,9 +155,11 @@ html, body {
 }
 
 /*imagem do quebra cabeça*/
-#img-peça {
+#img-peca img {
     margin-left: 60px;
-    margin-top: 35px;
+    margin-top: 45px;
+    width: 420px;
+
 }
 
 /*altera na div dos textos*/
@@ -167,9 +169,10 @@ html, body {
     margin-top: 35px;
 }
 
-/*altera apenas no paragrafos do da div dos texto, deixando eles com 20px de espaçamento */
+/*altera apenas no paragrafos da div dos texto, deixando eles com 20px de espaçamento */
 .texto-quemS p {
     padding-top: 20px;
+    text-align: justify;
 }
 
 .texto-quemS h2 {
@@ -201,6 +204,11 @@ html, body {
     font-size: 1rem;
 }
 
+/*botões de sobre e eventos com hover*/
+.bnt-saiba button:hover, .bnt-event button:hover {
+    background-color: var(--azul);
+}
+
 /*eventos*/
 
 .div-event {
@@ -225,7 +233,7 @@ html, body {
     text-align: center;
 
     max-width: 2000px;
-    margin: 35px 70px 40px 70px;
+    margin: 35px 50px 40px 50px;
 
 }
 
@@ -233,29 +241,51 @@ html, body {
 .img-event {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 4rem;
     
-    max-width: 1200px; 
+    overflow-x: auto;      /* permite deslizar pro lado */
+    scroll-snap-type: x mandatory; /* esse é uma propriedade que faz com que os elementos se alinhem automaticamente ao rolar */
+
+    max-width: 1000px; 
     width: 100%;
     
 }
+/* Remove a barra de rolagem do Chrome */
+.img-event::-webkit-scrollbar { 
+    display: none;
+}
+/* Remove a barra de rolagem do IE e Firefox 
+.img-event {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}*/
 
 /*a div do evento de carnaval para que o fundo fique com cor*/
 .carnaval {
-   width: 250px;
+   width: 350px;
    height: 350px;
 
    color: var(--bege);
    text-align: center;
 
    background-color: var(--azul);
-   padding: 0px 0px 50px 0px;
+   padding-bottom: 50px;
    border-radius: 0.4rem;
+   
+   flex: 0 0 auto;        /* impede de encolher */
+   scroll-snap-align: center; /* faz com que o elemento se alinhe ao centro ao rolar */
 }
 
-.carnaval p, .mae p, .corrida p, .bombeiro p {
+.carnaval p, .mae p, .criancas p{
     font-weight: bold;
+    padding-top: 10px;
+    
+}
+.corrida p, .bombeiro p {
+    font-weight: bold;
+    max-width: 220px;
+
+    margin: auto;
 }
 
 /*a imagem do evento de carnaval dentro do background*/
@@ -267,7 +297,7 @@ html, body {
 }
 
 .mae {
-    width: 250px;
+    width: 350px;
     height: 350px;
 
     color: var(--bege);
@@ -276,6 +306,9 @@ html, body {
     background-color: var(--laranja);
     padding: 0px 0px 50px 0px;
     border-radius: 0.4rem;
+
+    flex: 0 0 auto;        
+    scroll-snap-align: center;
 }
 
 .mae img {
@@ -285,8 +318,8 @@ html, body {
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
-.corrida {
-    width: 250px;
+.criancas {
+    width: 350px;
     height: 350px;
 
     color: var(--bege);
@@ -295,6 +328,31 @@ html, body {
     background-color: var(--amarelo);
     padding: 0px 0px 50px 0px;
     border-radius: 0.4rem;
+
+    flex: 0 0 auto;        
+    scroll-snap-align: center;
+}
+
+.criancas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.corrida {
+    width: 350px;
+    height: 350px;
+
+    color: var(--bege);
+    text-align: center;
+
+    background-color: var(--amarelo);
+    padding: 0px 0px 50px 0px;
+    border-radius: 0.4rem;
+
+    flex: 0 0 auto;        
+    scroll-snap-align: center;
 }
 .corrida img {
     width: 100%;
@@ -304,7 +362,7 @@ html, body {
 }
 
 .bombeiro {
-    width: 250px;
+    width: 350px;
     height: 350px;
 
     color: var(--bege);
@@ -313,6 +371,9 @@ html, body {
     background-color: var(--azul);
     padding: 0px 0px 50px 0px;
     border-radius: 0.4rem;
+
+    flex: 0 0 auto;       
+    scroll-snap-align: center;
 }
 .bombeiro img {
     width: 100%;
@@ -342,12 +403,16 @@ html, body {
     text-align: center;
 
     background-color: var(--laranja);
-    color: var(--bege);
 
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 1rem;
 }
+.bnt-event button a {
+    text-decoration: none;
+    color: var(--bege);
+}
+
 /* thaiza - Class Contribua com a amaq -- items na horizontal -- espaçamentos de 60px para esquerda
 e 20px para cima */
 .div-contribua { 
@@ -623,5 +688,3 @@ footer {
     text-align: center;
     padding-bottom: 40px;
 }
-
-
