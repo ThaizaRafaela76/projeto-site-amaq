@@ -347,7 +347,7 @@ html, body {
     color: var(--bege);
     text-align: center;
 
-    background-color: var(--amarelo);
+    background-color: var(--azul);
     padding: 0px 0px 50px 0px;
     border-radius: 0.4rem;
 
@@ -368,7 +368,7 @@ html, body {
     color: var(--bege);
     text-align: center;
 
-    background-color: var(--azul);
+    background-color: var(--laranja);
     padding: 0px 0px 50px 0px;
     border-radius: 0.4rem;
 
@@ -677,10 +677,19 @@ footer {
     margin-bottom: 10px;
 }
 
-.img-icones img {
-    margin-right: 15px;
-    max-width: 50px;
+.img-icone a {
+    display: inline-block;
+}
+
+.img-icone img {
+    width: 42px;
+    margin-right: 20px;
+    height: auto;
     cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.img-icone img:hover {
+    transform: scale(1.1);
 }
 
 .direitos-rodape {
