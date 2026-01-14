@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/casinha-bege.png"> <!--Para colocar o icone na barra do site-->
 
-    <title>Sobre a AMAQ</title>
+    <title>Sobre</title>
 
     <!-- CSS GLOBAL (usado em todo o site) -->
     <link rel="stylesheet" href="../../css/style.css">
@@ -16,38 +18,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
 </head>
 
-
 <body>
-<header class="home">
-    <!--Navbar-->
-    <div class="site-navbar">
-        <nav class="navbar-site">
-            <img src="../../img/vers%C3%A3o%20reduzida%20%28horizontal%29.png" class="img-vr">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="../index.html">Home</a></li>
-                <li class="nav-item"><a href="">Associados</a></li>
-                <li class="nav-item"><a href="">Ser parceiro</a></li>
-                <li class="nav-item">
-                    <a href="../contri.html" class="nav-button">Contribua com a AMAQ</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="home">
+        <!--Navbar-->
+        <div class="site-navbar">
+            <nav class="navbar-site">
+                <img src="../../img/vers%C3%A3o%20reduzida%20%28horizontal%29.png" class="img-vr">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="tamplates/index.html">Home</a></li>
+                    <li class="nav-item"><a href="">Associados</a></li>
+                    <li class="nav-item"><a href="">Ser parceiro</a></li>
+                    <li class="nav-item">
+                        <a href="../contri.html" class="nav-button">Contribua com a AMAQ</a>
+                    </li>
+                </ul>
+            </nav>
 
+            <div class="sobre-titulo">
+                <h1>Quem somos?</h1>
+                <h2>AMAQ: Instituição dedicada ao acolhimento, à inclusão e à defesa das pessoas com autismo.</h3>
+            </div>
+        </div> <!-- FECHAMENTO CORRETO DA DIV site-navbar -->
+    </header>
 
-<!--Membros-->
+    <main class="conteudo-principal">
 
-   <section id="membros-section">
-    <h2 id="h2-membros">Membros</h2>
-    <div id="card"></div>
-</section>
-<script src="../../js/script.js"></script>
+        <section class="section-sobre">
+            <div class="texto-quem-Somos">
+                <p>Fundada com o objetivo de promover o apoio, a inclusão e a defesa dos direitos das pessoas com
+                    Transtorno do Espectro Autista (TEA) e outras deficiências, a AMAQ atua de forma ativa no combate ao
+                    preconceito, na promoção da cidadania e na construção de uma sociedade mais justa e inclusiva.</p>
+                <br>
+
+                <p>Entre seus objetivos estão o apoio psicológico às famílias, a articulação com instituições, a
+                    promoção de ações sociais e a implantação de um centro de atendimento multidisciplinar. Conheça mais
+                    sobre a
+                    AMAQ e descubra como nossas ações impactam vidas, fortalecem famílias e contribuem para a construção
+                    de
+                    uma sociedade mais inclusiva.</p><br>
+
+            </div>
+        </section>
+
+        <section class="cards-mvv">
+
+            <div class="card-missao">
+                <h2 class="missao">Missão</h2>
+                <p>Promover o acolhimento, a inclusão e a qualidade de vida de pessoas com autismo, fortalecendo
+                    suas famílias e garantindo acesso a direitos fundamentais.</p>
+            </div>
+
+            <div class="card-visao">
+                <h2 class="visao">Visão</h2>
+                <p>Ser uma referência regional em ações de apoio e inclusão de pessoas com TEA, por meio de
+                    projetos educativos, terapêuticos e comunitários.</p>
+            </div>
+
+            <div class="card-valores">
+                <h2 class="valores">Valores</h2>
+                <p>A AMAQ fundamenta suas ações na empatia, no respeito à diversidade, no compromisso
+                    social, na ética e na cooperação, buscando promover um ambiente inclusivo e acolhedor
+                    para todas as pessoas.</p>
+            </div>
+
+        </section>
+
+    </main>
 
     <!--Membros-->
 
-       
+    <section id="membros-section">
+        <h2 id="h2-membros">Membros</h2>
+        <div id="card"></div>
+    </section>
+    <script src="../../js/script.js"></script>
+
+    <!--Membros-->
+
+    <!--Rodapé-->
+    <footer class="rodape">
+        <div class="conteudo footer-grid">
+            <!--contato-->
+            <div class="contatos">
+                <h4>Contato</h4>
+                <p>Telefone: (88) 9 9341-0517</p>
+                <p>Email: casadoautistaquixada@gmail.com</p>
+                <p>Instagram: @casadoautistaquixada</p>
+            </div>
+            <!--localização-->
+            <div class="localizacao">
+                <h4>Localização</h4>
+                <p>Rua Raimundo Gomes de Oliveira, N° 338,
+                    Bairro Baviera - Quixadá.
+                </p>
+            </div>
+            <!--redes sociais-->
+            <div class="img-icones">
+                <h4>Redes sociais</h4>
+                <a href="https://www.instagram.com/casadoautistaquixada?igsh=M2JzNHd4MHVsNTY1" target="_blank">
+                    <img src="../../img/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://wa.me/5588993410517">
+                    <img src="../../img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+        <p class="direitos">
+            &#169; 2026 - Associação de Mães e Autistas de Quixadá - Ceará
+        </p>
+    </footer>
+
+
 
 </body>
+
 </html>

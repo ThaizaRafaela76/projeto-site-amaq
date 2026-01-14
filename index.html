@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
 
-
-
     <title>AMAQ</title>
 </head>
 
@@ -24,9 +22,9 @@
             <nav class="navbar-site">
                 <img src="img/versão reduzida (horizontal).png" class="img-vr">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Sobre</a></li>
+                    <li class="nav-item"><a href="templates/sobre/sobre.html">Sobre</a></li>
                     <li class="nav-item"><a href="">Associados</a></li>
-                    <li class="nav-item"><a href="">Ser parceiro</a></li>
+                    <li class="nav-item"><a href="#parceiro">Ser parceiro</a></li>
                     <li class="nav-item">
                         <a href="templates/contri.html" class="nav-button">Contribua com a AMAQ</a>
                     </li>
@@ -53,7 +51,7 @@
     <main class="container">
 
         <section class="quem-somos">
-            <div id="img-peça">
+            <div id="img-peca">
                 <img src="img/quebra-cabeça-virado.png">
             </div>
             <div class="texto-quemS">
@@ -78,7 +76,7 @@
                 <p>Desenvolvemos ações contínuas de conscientização por meio de palestras, campanhas educativas e
                     eventos comunitários, promovendo inclusão e respeito. Para fortalecer essas iniciativas, contamos
                     com padrinhos que apoiam nossos eventos e contribuem diretamente para sua realização e alcance,
-                    ampliando seu impacto social. Seja padrinho e faça parte dessa transformação.</p>
+                    ampliando seu impacto social. <br>Seja padrinho e faça parte dessa transformação.</br></p>
             </div>
             <div class="img-event">
                 <div class="carnaval">
@@ -89,19 +87,23 @@
                     <img src="img/evento-mães.jpg">
                     <p>Dia das Mães</p>
                 </div>
+                <div class="criancas">
+                    <img src="img/foto-dia-das-crianças.jpg">
+                    <p>Dia das Crianças</p>
+                </div>
                 <div class="corrida">
                     <img src="img/evento-corrida.jpg">
                     <p>1°Corrida e Conscientização do Autismo</p>
                 </div>
                 <div class="bombeiro">
                     <img src="img/evento-bombeiros.jpg">
-                    <p>Projetos Bombeiros</p>
+                    <p>Projeto Saúde, Bombeiros e Sociedade</p>
                 </div>
             </div>
             <!-- Botões separados -->
             <div class="bnt-event">
-                <button>Confira nosso cronograma</button>
-                <button>Quero ser padrinho</button>
+                <button><a>Confira nosso cronograma</a></button>
+                <button><a href="https://wa.me/5588993410517">Quero ser padrinho</a></button>
             </div>
         </section>
 
@@ -183,7 +185,7 @@
         </div>
 
         <!--Parceiros-->
-        <section class="section-parceiro">
+        <section class="section-parceiro" id="parceiro">
             <h2>Nossos Parceiros</h2>
             <p>Contamos com o apoio de parceiros e colaboradores para ampliar nosso alcance, garantir a continuidade de
                 nossas ações e tornar eventos
@@ -220,7 +222,7 @@
                 <!--localização-->
                 <div class="local-rodape">
                     <h4>Localização</h4>
-                    <p>Rua Raimundo Gomes de Oliveira, N° 338, Bairro Baviera - Quixadá.</p>
+                    <p>Rua Solon Viana, N° 762, Bairro Alto São Francisco - Quixadá.</p>
                 </div>
 
                 <!--redes sociais-->
