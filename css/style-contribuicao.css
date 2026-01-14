@@ -159,6 +159,10 @@ section p {
     color: var(--bege);
 }
 
+.associado button:hover{
+    transform: scale(1.05);
+}
+
 .benfeitor {
     background-color: var(--amarelo);
     color: var(--bege);
@@ -167,6 +171,10 @@ section p {
 .benfeitor button {
     background-color: var(--azul);
     color: var(--bege);
+}
+
+.benfeitor button:hover{
+    transform: scale(1.05);
 }
 
 .dinheiro {
