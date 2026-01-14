@@ -483,11 +483,26 @@ adicionado em h2 cores da marca */
 }
 /* Filho do bloco profissionais ajuste dos backgrounds das divs -- 
     Div */
+
+.div-profissionais {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+    h2 {
+        color: var(--azul);
+        padding-bottom: 15px;
+    }
+    p {
+        padding-top: 20px;
+    }
+}
+/* Filho do bloco profissionais ajuste dos backgrounds das divs -- 
+    Div */
 .div-profissionais-bloco {
 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     p {
         padding: 0;
@@ -504,13 +519,14 @@ adicionado em h2 cores da marca */
 
             div {
                  margin-top: 0;
-                 width: 70%;
+                 width: 50%;
             }
-           img{
+            img{
                 width: 100px;
                 height: 120px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+                
             }
         }
     }
