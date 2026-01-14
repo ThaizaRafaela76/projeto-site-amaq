@@ -465,6 +465,7 @@ adicionado em h2 cores da marca */
     font-weight: bold;
     font-size: 1rem;
 }
+
 /* Bloco Profissionais*/
 .div-profissionais {
     align-items: center;
@@ -485,6 +486,8 @@ adicionado em h2 cores da marca */
 .div-profissionais-bloco {
 
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     p {
         padding: 0;
@@ -501,15 +504,15 @@ adicionado em h2 cores da marca */
 
             div {
                  margin-top: 0;
-                 width: 50%;
+                 width: 70%;
             }
-            img{
+           /* img{
                 width: 100px;
                 height: 120px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 
-            }
+            }*/
         }
     }
 
@@ -599,6 +602,20 @@ adicionado em h2 cores da marca */
         width: 50%;
     }
 }
+
+.img-prof {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+}
+
+.img-prof img {
+    width: 1200px;
+    height: auto;
+    width: 300px;
+}
+
 
 /* button-default - contribua - profissionais - parceiros */
 .button-default {
