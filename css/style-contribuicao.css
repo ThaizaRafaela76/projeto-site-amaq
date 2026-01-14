@@ -72,7 +72,6 @@ html, body {
 
 #nav-button:hover{
     background-color: var(--azul);
-    transform: scale(1.05);
 }
 
 
@@ -271,6 +270,10 @@ section p {
     top: 1.5rem;
 }
 
+.img-icones img:hover {
+    transform: scale(1.1);
+}
+
 .img-icones h4 {
     text-align: right;
     margin-right: 2rem;
@@ -278,8 +281,9 @@ section p {
 
 .img-icones img {
     margin-right: 15px;
-    max-width: 50px;
+    max-width: 40px;
     cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 

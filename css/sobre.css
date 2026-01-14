@@ -55,18 +55,18 @@ body {
     height: auto;
 }
 
-.nav-item a.nav-button {
-    background-color: var(--laranja);
+#nav-button{
+    background-color:  var(--laranja);
+    text-decoration: none;
     color: var(--bege);
-    padding: 0.6rem 1.2rem;
-    border-radius: 0.5rem;
+    padding: 0.6rem 1rem; 
+    border-radius: 0.4rem;
     font-weight: bold;
+    align-items: center;
 }
 
-.nav-item a.nav-button:hover {
+#nav-button:hover{
     background-color: var(--azul);
-    color: var(--bege);
-    transform: scale(1.05);
 }
 
 /* ================= TÍTULO DA PÁGINA ================= */
@@ -246,7 +246,7 @@ body {
     width: 100%;
     background-color: var(--azul);
     color: var(--bege);
-    padding: 2.5rem 3rem 1.5rem;
+    padding: 0.7rem 3rem 1.5rem;
 }
 
 /* Grid principal */
@@ -265,6 +265,8 @@ body {
 
 .contatos {
     text-align: left;
+    position: relative;
+    top: 1.5rem;
 }
 
 .contatos h4 {
@@ -282,7 +284,12 @@ body {
 ========================= */
 
 .localizacao {
+    width: 300px;
     text-align: center;
+    max-width: 320px;
+    position: relative;
+    top: 1.5rem;
+    right: -5rem;
 }
 
 .localizacao h4 {
@@ -301,6 +308,8 @@ body {
 
 .img-icones {
     text-align: right;
+    position: relative;
+    top: 1.5rem;
 }
 
 .img-icones h4 {
@@ -314,7 +323,8 @@ body {
 }
 
 .img-icones img {
-    width: 42px;
+    width: 40px;
+    margin-right: 7px;
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
