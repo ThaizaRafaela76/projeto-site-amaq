@@ -236,8 +236,8 @@ html, body {
 
     max-width: 1000px; 
     width: 100%;
-    
 }
+
 /* Remove a barra de rolagem do Chrome */
 .img-event::-webkit-scrollbar { 
     display: none;

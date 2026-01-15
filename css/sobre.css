@@ -169,12 +169,12 @@ body {
     box-sizing: border-box;
 }
 
-#membros-section #h2-membros {
+#membros-section #h1-membros {
     text-align: center;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 600;
     margin: 48px 0 40px;
-    color: #000000;
+    color: var(--laranja);
 }
 
 #membros-section #card {
@@ -206,8 +206,8 @@ body {
 
 #membros-section .nome-membro {
     font-size: 16px;
-    font-weight: 600;
-    color: #1f1f1f;
+    font-weight: bold;
+    color: var(--laranja);
     margin-bottom: 4px;
 }
 
