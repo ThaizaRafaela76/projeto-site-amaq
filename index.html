@@ -71,7 +71,7 @@
                     sobre a AMAQ e descubra como nossas ações impactam vidas, fortalecem famílias e contribuem para a
                     construção de uma sociedade mais inclusiva. </p>
                 <div class="bnt-saiba">
-                    <button><a href="templates/sobre/sobre.html"> Saiba mais sobre a AMAQ</a></button>
+                    <button class="button-default"><a href="templates/sobre/sobre.html"> Saiba mais sobre a AMAQ</a></button>
                 </div>
             </div>
         </section>
@@ -86,31 +86,31 @@
                     ampliando seu impacto social. <br>Seja padrinho e faça parte dessa transformação.</br></p>
             </div>
             <div class="img-event">
-                <div class="carnaval">
+                <div class="eventos" id="carnaval">
                     <img src="img/evento-carnaval.png">
                     <p>Bloquinho da AMAQ</p>
                 </div>
-                <div class="mae">
+                <div class="eventos" id="mae">
                     <img src="img/evento-mães.jpg">
                     <p>Dia das Mães</p>
                 </div>
-                <div class="criancas">
+                <div class="eventos" id="criancas">
                     <img src="img/foto-dia-das-crianças.jpg">
                     <p>Dia das Crianças</p>
                 </div>
-                <div class="corrida">
+                <div class="eventos" id="corrida">
                     <img src="img/evento-corrida.jpg">
                     <p>1°Corrida e Conscientização do Autismo</p>
                 </div>
-                <div class="bombeiro">
+                <div class="eventos" id="bombeiro">
                     <img src="img/evento-bombeiros.jpg">
                     <p>Projeto Saúde, Bombeiros e Sociedade</p>
                 </div>
             </div>
             <!-- Botões separados -->
             <div class="bnt-event">
-                <button><a>Confira nosso cronograma</a></button>
-                <button><a href="https://wa.me/5588993410517">Quero ser padrinho</a></button>
+                <button class="button-default"><a>Confira nosso cronograma</a></button>
+                <button class="button-default"><a href="https://wa.me/5588993410517">Quero ser padrinho</a></button>
             </div>
         </section>
 
@@ -215,18 +215,14 @@
     </main>
 
     <!--Rodapé-->
-
-    <footer>
-        <div class="rodape">
-
+    <footer class="rodape">
+        <div class="conteudos">
             <!--contato-->
-            <section class="conteudo-rodape">
-                <div class="colunas-rodape">
+            <!--<section class="conteudo-rodape"> -->
+                <div class="contatos-rodape">
                     <h4>Contato</h4>
                     <p>Telefone: (88) 9 9341-0517</p>
-                    <a href="mailto:casadoautistaquixada@gmail.com">
-                        <p>Email: casadoautistaquixada@gmail.com</p>
-                    </a>
+                    <p>Email: casadoautistaquixada@gmail.com</p>
                     <p>Instagram: @casadoautistaquixada</p>
                 </div>
 
@@ -237,21 +233,16 @@
                 </div>
 
                 <!--redes sociais-->
-                <div class="colunas-rodape">
+                <div class="redes-rodape">
                     <h4>Redes Sociais</h4>
-                    <div class="img-icone">
                         <a href="https://www.instagram.com/casadoautistaquixada?igsh=M2JzNHd4MHVsNTY1"
                             target="_blank"><img src="img/instagram.png"></a>
                         <a href="https://wa.me/5588993410517"><img src="img/whatsapp.png"></a>
-                    </div>
                 </div>
-            </section>
-            <!--Direitos-->
-            <section class="direitos-rodape">
-                <p> &#169; 2026 - Associação de Mães e Autistas de Quixadá - Ceará </p>
-            </section>
         </div>
-        </div>
+        <!--Direitos-->
+        <!--</section>-->
+        <p class="direitos-rodape"> &#169; 2026 - Associação de Mães e Autistas de Quixadá - Ceará </p>
     </footer>
 
     <script src="js/script.js"></script>

@@ -186,23 +186,10 @@ html, body {
     padding-top: 30px;
 }
 
-/*altera as propriedades do botão*/
-.bnt-saiba button {
-    padding: 10px 10px;
-    border: 0;
-    border-radius: 0.4rem;
-
-    background-color: var(--laranja);
-}
-
 /*altera apenas o texto do botão*/
 .bnt-saiba button a {
     text-decoration: none;
     color: var(--bege);
-
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
 }
 
 /*botões de sobre e eventos com hover*/
@@ -262,7 +249,7 @@ html, body {
 }*/
 
 /*a div do evento de carnaval para que o fundo fique com cor*/
-.carnaval {
+#carnaval {
    width: 350px;
    height: 350px;
 
@@ -277,12 +264,12 @@ html, body {
    scroll-snap-align: center; /* faz com que o elemento se alinhe ao centro ao rolar */
 }
 
-.carnaval p, .mae p, .criancas p{
+#carnaval p, #mae p, #criancas p{
     font-weight: bold;
     padding-top: 10px;
     
 }
-.corrida p, .bombeiro p {
+#corrida p, #bombeiro p {
     font-weight: bold;
     max-width: 220px;
 
@@ -290,14 +277,14 @@ html, body {
 }
 
 /*a imagem do evento de carnaval dentro do background*/
-.carnaval img {
+#carnaval img {
      width: 100%;
      height: 100%;
      object-fit: cover; 
      border-radius: 0.4rem 0.4rem 0 0;  
 }
 
-.mae {
+#mae {
     width: 350px;
     height: 350px;
 
@@ -312,14 +299,14 @@ html, body {
     scroll-snap-align: center;
 }
 
-.mae img {
+#mae img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
-.criancas {
+#criancas {
     width: 350px;
     height: 350px;
 
@@ -334,14 +321,14 @@ html, body {
     scroll-snap-align: center;
 }
 
-.criancas img {
+#criancas img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
-.corrida {
+#corrida {
     width: 350px;
     height: 350px;
 
@@ -355,14 +342,14 @@ html, body {
     flex: 0 0 auto;        
     scroll-snap-align: center;
 }
-.corrida img {
+#corrida img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.4rem 0.4rem 0 0;
 }
 
-.bombeiro {
+#bombeiro {
     width: 350px;
     height: 350px;
 
@@ -376,7 +363,7 @@ html, body {
     flex: 0 0 auto;       
     scroll-snap-align: center;
 }
-.bombeiro img {
+#bombeiro img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -389,25 +376,14 @@ html, body {
     justify-content: center;
 
     gap: 4.5rem;          
-    padding-top: 50px;
+    padding-top: 40px;
 
     max-width: 1200px;  
     width: 100%;
 }
 /*propriedades do botão*/
 .bnt-event button {
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 0.4rem;
-
     min-width: 260px;
-    text-align: center;
-
-    background-color: var(--laranja);
-
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
 }
 .bnt-event button a {
     text-decoration: none;
@@ -675,67 +651,82 @@ adicionado em h2 cores da marca */
 }
 
 /*rodapé*/
-footer {
+.rodape {
     background-color: var(--azul);
     color: var(--bege);
-    padding: 40px 0px 0px 90px
+    padding: 0.95rem 9rem 2rem;
 }
+.conteudos {
+    width: 100%;
+    max-width: 1250px;
+    margin-right: 100px;
 
-.rodape {
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
-.conteudo-rodape {
     display: flex;
-    justify-content: center; 
-    gap: 200px;            
+    justify-content: space-between;
     align-items: flex-start;
+    gap: 3rem;
+}
+.rodape h4 {
+    margin-bottom: 0.5rem;
+}
+.rodape p {
+    line-height: 1.6;
 }
 
-.colunas-rodape {
-    width: 320px; 
-
+/*contatos*/
+.contatos-rodape {
+    position: relative;
+    top: 1.5rem;
 }
-.colunas-rodape p{
-    margin-bottom: 10px;
+.contatos-rodape h4 {
+    text-align: left;
+}
+.contatos-rodape p {
+    padding-bottom: 0.35rem;
+}
+.contatos-rodape {
+    text-align: left;
+    margin-right: 3rem;
 }
 
-.colunas-rodape a {
-    text-decoration: none;
-    color: var(--bege);
-}
-
+/*localização*/
 .local-rodape {
     width: 300px;
     text-align: center;
     max-width: 320px;
+    position: relative;
+    top: 1.5rem;
+    left: -4.5rem;
+}
+.local-rodape p {
+    text-align: center;
 }
 
-.colunas-rodape h4, .local-rodape h4 {
-    margin-bottom: 10px;
+/*icones*/
+.redes-rodape {
+    position: relative;
+    top: 1.5rem;
 }
-
-.img-icone a {
-    display: inline-block;
+.redes-rodape img:hover {
+    transform: scale(1.1);
 }
-
-.img-icone img {
-    width: 42px;
-    margin-right: 20px;
-    height: auto;
+.redes-rodape h4 {
+    text-align: right;
+    margin-right: 2rem;
+}
+.redes-rodape img {
+    margin-right: 15px;
+    max-width: 40px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
-.img-icone img:hover {
-    transform: scale(1.1);
-}
 
+/*direitos*/
 .direitos-rodape {
-    padding-top: 40px 0px;
     text-align: center;
-    padding-bottom: 40px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
 }
 
 
