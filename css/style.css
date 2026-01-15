@@ -501,7 +501,7 @@ adicionado em h2 cores da marca */
                 width: auto;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                
+                margin-left: 10%; margin-right: 0px;
             }
         }
     }
@@ -623,7 +623,8 @@ adicionado em h2 cores da marca */
 .section-parceiro {
     align-items: center;
     text-align: center;
-    justify-items: center;;
+    justify-items: center;
+    margin-top: 50px;
 
     h2 {
         color: var(--amarelo);
@@ -631,6 +632,8 @@ adicionado em h2 cores da marca */
     }
     p {
         padding-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 
@@ -653,7 +656,7 @@ adicionado em h2 cores da marca */
 .rodape {
     background-color: var(--azul);
     color: var(--bege);
-    padding: 0.95rem 9rem 2rem;
+    padding: 0.95rem 6rem 2rem;
 }
 .conteudos {
     width: 100%;
