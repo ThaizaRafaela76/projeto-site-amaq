@@ -92,7 +92,7 @@ html, body {
 
     background-image:
     linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), /*adiciona o overlay;*/
-    url("/img/foto-home2.png");
+    url("../img/foto-home2.png");
 
     background-size: 100% 100%;  /* Faz a imagem cobrir toda a área */
     background-position: center;
@@ -498,8 +498,7 @@ adicionado em h2 cores da marca */
                  width: 50%;
             }
             img{
-                width: 100px;
-                height: 120px;
+                width: auto;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 
