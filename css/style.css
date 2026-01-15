@@ -653,7 +653,7 @@ adicionado em h2 cores da marca */
 .rodape {
     background-color: var(--azul);
     color: var(--bege);
-    padding: 0.95rem 9rem 2rem;
+    padding: 0.95rem 6rem 2rem;
 }
 .conteudos {
     width: 100%;
