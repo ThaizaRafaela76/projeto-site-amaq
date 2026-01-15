@@ -27,21 +27,17 @@ body {
 
 .navbar-site {
     display: flex;
+    flex-direction: row;
+    margin-left: 0px;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3rem;
 }
-
 .navbar-site ul {
     list-style: none;
+    font-family: 'Nunito', sans-serif;
     display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
+    gap: 1rem;
+    padding: 50px;
 }
 
 .nav-item a {
@@ -50,11 +46,23 @@ body {
     font-weight: bold;
 }
 
+#nav-button a {
+    text-decoration: none;
+    color: var(--bege);
+}
 .img-vr {
     width: 200px;
     height: auto;
+    margin-right: 2rem;
+    padding-left: 50px;
 }
+/*.nav-item a:hover {
+    background-color: var(--amarelo);
+    color: var(--bege);
+    text-decoration: none;
+} */
 
+/* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
 #nav-button{
     background-color:  var(--laranja);
     text-decoration: none;
@@ -143,6 +151,7 @@ body {
 .card-missao {
     background-color: var(--azul);
     color: var(--bege);
+    text-align: justify;
 }
 
 .card-visao {
@@ -171,7 +180,7 @@ body {
 
 #membros-section #h1-membros {
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 48px 0 40px;
     color: var(--laranja);
@@ -246,7 +255,7 @@ body {
     width: 100%;
     background-color: var(--azul);
     color: var(--bege);
-    padding: 0.7rem 3rem 1.5rem;
+    padding: 0.1rem 9rem 2rem;
 }
 
 /* Grid principal */
@@ -266,17 +275,18 @@ body {
 .contatos {
     text-align: left;
     position: relative;
-    top: 1.5rem;
+    top: 2.5rem;
 }
 
 .contatos h4 {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .contatos p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 0.6rem;
+    margin-top: -5px;
 }
 
 /* =========================
@@ -288,18 +298,19 @@ body {
     text-align: center;
     max-width: 320px;
     position: relative;
-    top: 1.5rem;
-    right: -5rem;
+    top: 2.5rem;
+    right: -4.5rem;
 }
 
 .localizacao h4 {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.rem;
 }
 
 .localizacao p {
     font-size: 0.95rem;
     line-height: 1.5;
+    margin-top: -5px;
 }
 
 /* =========================
@@ -309,12 +320,13 @@ body {
 .img-icones {
     text-align: right;
     position: relative;
-    top: 1.5rem;
+    top: 2.5rem;
 }
 
 .img-icones h4 {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-right: 8px;
+    font-size: 1rem;
 }
 
 .img-icones a {
@@ -328,6 +340,7 @@ body {
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
+    margin-top: -5px;
 }
 
 .img-icones img:hover {
