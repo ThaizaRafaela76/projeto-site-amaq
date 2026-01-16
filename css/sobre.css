@@ -153,15 +153,27 @@ body {
     color: var(--bege);
     text-align: justify;
 }
+.card-missao:hover {
+   transform: scale(1.08);
+   transition: transform 0.2s ease;
+}
 
 .card-visao {
     background-color: var(--laranja);
     color: var(--bege);
 }
+.card-visao:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease;
+}
 
 .card-valores {
     background-color: var(--amarelo);
     color: var(--bege);
+}
+.card-valores:hover {
+    transform: scale(1.08);
+    transition: transform 0.2s ease;
 }
 
 .cards-mvv p {

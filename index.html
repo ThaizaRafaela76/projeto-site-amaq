@@ -50,7 +50,7 @@
         <div class="video-container">
             <button id="fechar-video">X</button>
             <video controls>
-                <source src="videos/video.mp4" type="video/mp4" />
+                <source src="videos/video.mp4" type="video/mp4"/>
             </video>
         </div> 
     </div>
@@ -85,6 +85,10 @@
                     com padrinhos que apoiam nossos eventos e contribuem diretamente para sua realização e alcance,
                     ampliando seu impacto social. <br>Seja padrinho e faça parte dessa transformação.</br></p>
             </div>
+            <div class="container-event">
+                <button id="voltar-bnt" type="button" onclick="voltar()">
+                    <img src="img/seta.png">
+                </button>
             <div class="img-event">
                 <div class="eventos" id="carnaval">
                     <img src="img/evento-carnaval.png">
@@ -107,6 +111,11 @@
                     <p>Projeto Saúde, Bombeiros e Sociedade</p>
                 </div>
             </div>
+                <button id="prox-bnt" type="button" onclick="avancar()">
+                    <img src="img/seta.png">
+                </button>
+            </div>
+            
             <!-- Botões separados -->
             <div class="bnt-event">
                 <button class="button-default"><a href="https://www.instagram.com/casadoautistaquixada?igsh=M2JzNHd4MHVsNTY1">Confira nosso cronograma</a></button>
@@ -129,7 +138,7 @@
                     associados e de
                     doações financeiras, e cada forma de colaboração nos permite continuar desenvolvendo iniciativas que
                     promovem respeito, cuidado e inclusão social. </p>
-                <button class="button-default"> Contribua com a AMAQ </button>
+                <button class="button-default"><a href="templates/contri.html">Contribua com a AMAQ</a></button>
             </div>
             <div class="div-img-contribua">
                 <img src="img/casinha-azul.png" width="400px">
@@ -189,7 +198,7 @@
                 </div>
             </div>
             <!--botão de voluntario-->
-            <button class="button-default"><a>Quero ser Voluntário</a></button>
+            <button class="button-default"><a href="https://wa.me/5588993410517">Quero ser Voluntário</a></button>
         </div>
 
         <!--Parceiros-->
@@ -207,7 +216,7 @@
             </div>
             <!--Botão de parceiro-->
             <div>
-                <button class="button-default" id="button-parceiro"><a>Quero ser Parceiro</a></button>
+                <button class="button-default" id="button-parceiro"><a href="https://wa.me/5588993410517">Quero ser Parceiro</a></button>
             </div>
         </section>
     </main>
@@ -244,6 +253,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/carrosel.js"></script>
 </body>
 
 </html>
