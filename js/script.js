@@ -18,6 +18,7 @@ btn_fechar?.addEventListener("click", function(event){
     div.style.display = "none";
 });
 
+
 async function baixarDados() {
     const requisicaoHTTP = await fetch(
         "https://my-json-server.typicode.com/JuliaSouzza/api-membros/membros"
