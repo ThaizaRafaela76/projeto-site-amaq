@@ -90,9 +90,6 @@ html, body {
     color: var(--azul)
 }
 
-.conteudo-principal {
-    flex: 1;
-}
 
 /* SECTIONS */
 main section {
@@ -291,4 +288,30 @@ section p {
     text-align: center;
     margin-top: 2rem;
     font-size: 1rem;
+}
+
+/* estilizando o botão de voltar pro topo */
+
+#botaoTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background: none;      /* remove fundo */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    display: none;
+    z-index: 1000;
+}
+
+#botaoTopo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
 }
