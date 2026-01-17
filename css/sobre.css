@@ -161,6 +161,7 @@ body {
 .card-visao {
     background-color: var(--laranja);
     color: var(--bege);
+    text-align: justify;
 }
 .card-visao:hover {
     transform: scale(1.08);
@@ -170,6 +171,8 @@ body {
 .card-valores {
     background-color: var(--amarelo);
     color: var(--bege);
+    text-align: justify;
+
 }
 .card-valores:hover {
     transform: scale(1.08);
