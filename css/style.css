@@ -806,3 +806,28 @@ adicionado em h2 cores da marca */
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/* estilizando o botão de voltar pro topo */
+#botaoTopo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background: none;      /* remove fundo */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    display: none;
+    z-index: 1000;
+}
+
+#botaoTopo img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
