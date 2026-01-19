@@ -43,21 +43,12 @@ html, body {
     font-weight: bold;
 }
 
-#nav-button a {
-    text-decoration: none;
-    color: var(--bege);
-}
 .img-vr {
     width: 200px;
     height: auto;
     margin-right: 2rem;
     padding-left: 50px;
 }
-/*.nav-item a:hover {
-    background-color: var(--amarelo);
-    color: var(--bege);
-    text-decoration: none;
-} */
 
 /* botão do site alinhado com o texto, porém foi deslocado para o lado esquerdo */
 #nav-button{
@@ -301,7 +292,7 @@ section p {
     height: 50px;
     border-radius: 50%;
 
-    background: none;      /* remove fundo */
+    background: none;      
     border: none;
     padding: 0;
     cursor: pointer;
